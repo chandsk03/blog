@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary Meta Tags -->
+  <title>Updates Hub — Latest Tech & Student Opportunities</title>
+  <meta name="title" content="Updates Hub — Latest Tech & Student Opportunities" />
+  <meta name="description" content="Stay updated with the latest tech events, student internships, workshops, and learning programs — all in one place." />
+  <meta name="keywords" content="updates, tech events, internships, student opportunities, workshops, learning, India, enroll, apply, courses" />
+  <meta name="author" content="Updates Hub Team" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourusername.github.io/updateshub/" />
+  <meta property="og:title" content="Updates Hub — Latest Tech & Student Opportunities" />
+  <meta property="og:description" content="Discover new events, hackathons, internships, and learning programs. Stay ahead with curated updates from trusted sources." />
+  <meta property="og:image" content="https://yourusername.github.io/updateshub/thumbnail.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://yourusername.github.io/updateshub/" />
+  <meta name="twitter:title" content="Updates Hub — Latest Tech & Student Opportunities" />
+  <meta name="twitter:description" content="Get the latest updates about internships, events, and workshops — curated for learners and tech enthusiasts." />
+  <meta name="twitter:image" content="https://yourusername.github.io/updateshub/thumbnail.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- Theme color for browsers -->
+  <meta name="theme-color" content="#0d1117" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0d1117;
+      color: #e6edf3;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 55vh;
+      text-align: center;
+      background: linear-gradient(145deg, #0d1117, #161b22);
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      background: linear-gradient(90deg, #4f9cff, #00d4ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      color: #c9d1d9;
+      font-size: 1.1rem;
+      max-width: 600px;
+    }
+
+    /* ===== NAVIGATION ===== */
+    nav {
+      background-color: #161b22;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0.8rem 1rem;
+    }
+
+    .nav-logo {
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: #00d4ff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .nav-links a {
+      color: #e6edf3;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      background: #00d4ff33;
+      color: #00d4ff;
+    }
+
+    /* Hamburger menu */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      width: 25px;
+      height: 3px;
+      background-color: #e6edf3;
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+
+    /* ===== SECTIONS ===== */
+    section {
+      max-width: 1100px;
+      margin: 2rem auto;
+      background: #161b22;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      color: #58a6ff;
+      margin-bottom: 1rem;
+      border-left: 4px solid #00d4ff;
+      padding-left: 0.6rem;
+      font-size: 1.5rem;
+    }
+
+    /* ===== FEEDS ===== */
+    .feeds {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .feed-card {
+      background: #0d1117;
+      border: 1px solid #30363d;
+      border-radius: 10px;
+      padding: 1.5rem;
+      transition: transform 0.3s, border-color 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .feed-card:hover {
+      transform: translateY(-5px);
+      border-color: #00d4ff;
+    }
+
+    .feed-card h3 {
+      color: #00d4ff;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .feed-card p {
+      color: #c9d1d9;
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .feed-card a {
+      align-self: flex-start;
+      text-decoration: none;
+      background: linear-gradient(90deg, #0078d7, #00d4ff);
+      color: #fff;
+      padding: 0.5rem 1.2rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+    }
+
+    .feed-card a:hover {
+      transform: translateY(-2px);
+      opacity: 0.85;
+    }
+
+    footer {
+      background-color: #161b22;
+      text-align: center;
+      padding: 1.2rem;
+      font-size: 0.9rem;
+      color: #8b949e;
+      border-top: 1px solid #30363d;
+      margin-top: 2rem;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #161b22;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+
+      section {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
+
+      .feed-card a {
+        font-size: 0.85rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+      header p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Updates Hub</h1>
+    <p>Stay updated with the latest opportunities, tech events, and learning programs — all in one place.</p>
+  </header>
+
+  <nav>
+    <div class="nav-container">
+      <div class="nav-logo">UpdatesHub</div>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="nav-links" id="nav-links">
+        <a href="#updates">Updates</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="updates">
+    <h2>Latest Feeds</h2>
+    <div class="feeds" id="feeds-container">
+      <p>Loading feeds...</p>
+    </div>
+  </section>
+
+  <section id="events">
+    <h2>Upcoming Events</h2>
+    <p>Stay tuned for hackathons, workshops, and conferences near you!</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Have something to share? Reach out at 
+      <a href="mailto:info@updateshub.com" style="color:#00d4ff;">info@updateshub.com</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Updates Hub | Designed for the modern web</p>
+  </footer>
+
+  <script>
+    // Toggle Menu
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      toggle.classList.toggle('open');
+    });
+
+    // Close menu when link clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('active'));
+    });
+
+    // Load Feeds
+    async function loadFeeds() {
+      try {
+        const response = await fetch('feeds.json');
+        const data = await response.json();
+        const feedsContainer = document.getElementById('feeds-container');
+        feedsContainer.innerHTML = '';
+
+        data.feeds.forEach(feed => {
+          const card = document.createElement('div');
+          card.classList.add('feed-card');
+
+          let buttonLabel = 'Know More →';
+          if (feed.type === 'apply') buttonLabel = 'Apply Now →';
+          else if (feed.type === 'enroll') buttonLabel = 'Enroll →';
+
+          card.innerHTML = `
+            <div>
+              <h3>${feed.title}</h3>
+              <p>${feed.description}</p>
+            </div>
+            <a href="${feed.link}" target="_blank">${buttonLabel}</a>
+          `;
+          feedsContainer.appendChild(card);
+        });
+      } catch (error) {
+        document.getElementById('feeds-container').innerHTML =
+          '<p style="color:#ff6b6b;">Error loading feeds. Please check feeds.json file.</p>';
+      }
+    }
+
+    loadFeeds();
+  </script>
+</body>
+</html>

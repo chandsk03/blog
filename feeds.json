@@ -1,0 +1,28 @@
+{
+  "feeds": [
+    {
+      "title": "🚀 Google Cloud Study Jam",
+      "description": "Join the Study Jam and earn Google Cloud badges.",
+      "link": "https://cloud.google.com/training",
+      "type": "enroll"
+    },
+    {
+      "title": "🎓 Internship Portal Open",
+      "description": "Apply for new tech internships before November 15th.",
+      "link": "https://internshipindia.com",
+      "type": "apply"
+    },
+    {
+      "title": "💡 AI Workshop 2025",
+      "description": "Register for the national-level AI & ML workshop — free for the first 100 students.",
+      "link": "https://aiworkshop2025.com/register",
+      "type": "enroll"
+    },
+    {
+      "title": "🧠 Cybersecurity Bootcamp",
+      "description": "A free bootcamp with live projects and security labs.",
+      "link": "https://cybercamp.io",
+      "type": "know"
+    }
+  ]
+}
