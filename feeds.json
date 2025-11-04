@@ -1,27 +1,20 @@
 {
   "feeds": [
     {
-      "title": "🚀 Google Cloud Study Jam",
-      "description": "Join the Study Jam and earn Google Cloud badges.",
-      "link": "https://cloud.google.com/training",
+      "title": "Free CAPIE - Certified API Hacking Expert",
+      "description": "Access CAPIE (Certified API Hacking Expert) lesson materials for free — enroll now and use coupon `CAPIEFREE` to claim the offer.",
+      "link": "https://thexssrat.podia.com/capie-lesson-material-no-cert?coupon=CAPIEFREE",
       "type": "enroll"
     },
     {
-      "title": "🎓 Internship Portal Open",
-      "description": "Apply for new tech internships before November 15th.",
-      "link": "https://internshipindia.com",
-      "type": "apply"
-    },
-    {
-      "title": "💡 AI Workshop 2025",
-      "description": "Register for the national-level AI & ML workshop — free for the first 100 students.",
-      "link": "https://aiworkshop2025.com/register",
-      "type": "enroll"
-    },
-    {
-      "title": "🧠 Cybersecurity Bootcamp",
-      "description": "A free bootcamp with live projects and security labs.",
-      "link": "https://cybercamp.io",
+      "title": "🎓 Microsoft AI Tour — Mumbai (Free Registration)",
+      "description": "Join the Microsoft AI Tour in Mumbai for free AI sessions and networking. Register now!",
+      "link": "https://aitour.microsoft.com/flow/microsoft/mumbai26/landingpage/page/cityhome?wt.mc_id=studentamb_476507",
+      "type": "know"
+    },{
+      "title": "Fabric Data Days (English)",
+      "description": "Join Microsoft Reactor’s Fabric Data Days — a series of livestreams on data engineering, analytics, and AI tools.",
+      "link": "https://developer.microsoft.com/en-us/reactor/series/S-1592/?wt.mc_id=youtube_S-1592_organicsocial_reactor&wt.mc_id=studentamb_476507",
       "type": "know"
     }
   ]
